@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.5.16;
+pragma solidity ^0.5.17;
 
 interface Strategy {
     function want() external view returns (address);
@@ -18,4 +18,6 @@ interface Strategy {
     function withdrawAll() external returns (uint256);
 
     function balanceOf() external view returns (uint256);
+
+    function skim() external;
 }
